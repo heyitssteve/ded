@@ -1,0 +1,70 @@
+body {
+    background-color: #382c24; /* Background color */
+    color: #ecdfbc; /* Font color */
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Adjust for better readability */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(80px); /* Start from slightly below */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+.profile-photo {
+    width: 1900px; /* Keep your preferred size */
+    height: 550px; /* Maintains aspect ratio */
+    margin-left: 40px; /* Adds space from the left edge */
+    border-radius: 15px; /* Optional: for rounded corners */
+    margin-top: 20px; /* Space from the top of the container */
+    animation: fadeIn 3s ease forwards; /* Apply fade-in animation */
+    animation-delay: 2s; /* Delay before animation starts */
+}
+
+.deepak-name {
+    font-size: 48px; /* Increased font size */
+    color: #ecdfbc; /* Same color as the other text */
+    margin-left: 40px; /* Align with the image */
+}
+
+/* Styles for name and title container */
+.name-title-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    margin-left: 40px; /* Align with the image */
+}
+
+/* Styles for name */
+.name {
+    font-size: 122px; /* Maintain your preferred size */
+    margin: 0; /* Remove margin for consistency */
+    padding-top: 10px; /* Space above the name */
+    animation: fadeInFromBottom 3s ease forwards; /* Apply animation */
+    animation-delay: 2s; /* Delay before animation starts */
+}
+
+/* Additional spacing for paragraph */
+p {
+    font-size: 20px;
+    margin-top: 10px; /* Space above the paragraph */
+    margin-left: 20px; /* Aligns with the text elements */
+    animation: fadeInFromBottom 3s ease forwards; /* Apply animation */
+    animation-delay: 2s; /* Delay for paragraph text */
+}
